@@ -35,7 +35,6 @@ void createBST(Node* &root) {
 	cout << "Enter data:" << endl;
 	int data;
 	cin >> data;
-
 	while(data != -1) {
 		root = insertIntoBST(root, data);
 		cout << "Enter data:" << endl;
@@ -58,7 +57,7 @@ void levelOrderTraversal(Node* root ) {
 			}
 		}
 		else {
-			cout << temp->data << " ";
+			cout <<temp->data<<" ";
 			if(temp->left != NULL) {
 				q.push(temp->left);
 			}
