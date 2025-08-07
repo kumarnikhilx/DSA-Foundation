@@ -18,11 +18,6 @@ void subsequenceOfStr(int index,string str,vector<char> &ds,vector<vector<char>>
     ds.push_back(str[index]);
     subsequenceOfStr(index+1,str,ds,ans);
     ds.pop_back();
-
-
-
-
-
 }
 
 int main(){
