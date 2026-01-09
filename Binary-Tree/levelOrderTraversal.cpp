@@ -73,14 +73,12 @@ void levelOrderPrint(Node* root){
             }
         }
         else{
-                cout<<front->data<<" ";
-
+            cout<<front->data<<" ";
             if(front->left !=NULL){
                 q.push(front->left);
             }
             if(front->right !=NULL){
                 q.push(front->right);
-
             }
         }
         
